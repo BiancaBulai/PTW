@@ -1,0 +1,112 @@
+.loginbox{
+    width: auto;
+    height: auto;
+    background: #000000;
+    color: #ffffff;
+    top:65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+}
+
+h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align: center;
+    font-size:22px;
+}
+h2{
+    margin:0;
+    padding:0 0 20px;
+    text-align: center;
+    font-size:13px;
+}
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.loginbox input[type="email"],input[type="password"],input[type="alergic"],input[type="vegetarian"],input[type="boala"]
+{
+    border:none;
+    border-bottom:1px solid #ffffff;;
+    background: transparent;
+    outline: none;
+    height: 60px;
+    color: white;
+    font-size:18px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #626dfb;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.loginbox a:hover{
+    color: #ffc107
+}
+
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px){
+    .loginbox{
+        /*margin-top: 30%;*/
+        width: auto;
+        height: auto;
+        background: #000000;
+        color: #ffffff;
+        top:65%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+       /* max-height: 100%;
+        min-width: 280px;*/
+    }
+    h1{
+        margin:0;
+        padding:0 0 20px;
+        text-align: center;
+        font-size:10px;
+    }
+    h2{
+        margin:0;
+        padding:0 0 20px;
+        text-align: center;
+        font-size:10px;
+    }
+    .loginbox input[type="submit"]{
+        border: none;
+        outline: none;
+        height: 20%;
+        background: #626dfb;
+        color: white;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .loginbox input[type="submit"]:hover{
+        cursor: pointer;
+        background: #ffc107;
+        color: #000000;
+    }
+}
