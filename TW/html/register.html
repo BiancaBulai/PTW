@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        <a href="#" id="logo"></a>
+
+        <nav>
+
+            <a href="../html/index.html" id="menu-icon"></a>
+
+            <ul>
+                <li><a href="../html/index.html" class="current">Acasa</a></li>
+                <li><a href="../html/login.html">Login</a></li>
+                <li><a href="../html/personalinfo.html">Preferinte Alimentare</a></li>
+                <li><a href="../html/restrictiialimentare.html">Restrictii Alimentare</a></li>
+                <li><a href="../html/stildeviata.html">Stil de viata</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+</div>
+<div class="loginbox">
+    <h1>Register Here</h1><br><br>
+    <form>
+        <p>Email</p>
+        <input type="text" name="email" pattern="[^ @]*@[^ @]*" placeholder="email" required>
+        <p>Password</p>
+        <input type="text" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="password" required>
+        <p>Confirm the Password</p>
+        <input type="text" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="password" required>
+        <input type="submit" name="" value="register">
+    </form>
+</div>
+</body>
+
+</html>
