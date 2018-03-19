@@ -1,0 +1,269 @@
+/*RESET*/
+html, body, div, h1, a,img, ul, li,  form, label{
+    margin:0;
+    padding:0;
+    border:0; outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height: 1;
+    overflow:hidden;
+}
+ul{
+    list-style:none;
+}
+
+/*MAIN*/
+body {
+    font-size: 1.05em;
+    line-height: 1.25em;
+    font-family: Courier New, monospace;
+    background: #ffffff;
+    color: #555;
+    padding-left:10%;
+    padding-right: 10%;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+}
+.box{
+    font-size:150%;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #444;
+
+}
+
+.img {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+header {
+    grid-column: 1;
+    grid-row: 1;
+    background: #fff;
+    /*width: 100%;*/
+    /*height: 76px;*/
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #000000;
+    z-index: 100;
+}
+
+#logo{
+    margin: 20px;
+    float: left;
+    width: 10%;
+    height: 40px;
+    background: url("../img/rsz_logo.jpg") no-repeat center;
+    display: block;
+
+}
+
+nav {
+    float: right;
+    padding: 20px;
+
+}
+
+#menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #000000 url("../img/rsz_menuicon.jpg") center;
+
+}
+
+a:hover#menu-icon {
+    background-color: #585858;
+    border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    float: left;
+    padding: 10px
+
+}
+li a{
+    color: #000000;
+    text-decoration:none;
+    padding:5px 20px;
+    font-family: Courier New, monospace;
+    font-size:15px;
+}
+
+.current {
+
+    color: #000000;
+
+}
+
+.b {
+    grid-column: 1;
+    grid-row: 2;
+    /*margin: 80px auto 40px;*/
+    max-width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+img {
+    max-width:100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    /*justify-content: center;*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+p {
+
+    line-height: 1.45em;
+    margin-bottom: 20px;
+
+}
+@media (max-width: 1341px){
+    li a{
+        padding:5px 5px;
+        font-size:15px;
+    }
+}
+@media (max-width:1140px){
+    li a{
+        padding:5px 5px;
+        font-size:12px;
+    }
+}
+@media only screen and (max-width : 1055px) {
+
+    .wrapper{
+        display:grid;
+        grid-gap:10px;
+        grid-template-columns: 100%;
+    }
+    .aa {
+        grid-column:1;
+        grid-row:1;
+
+        /*position: absolute;*/
+
+    }
+    .b{
+        grid-column:1;
+        grid-row:2;
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+    #menu-icon {
+
+        display: inline-block;
+
+    }
+
+    nav ul, nav:active ul {
+
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #ffffff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+    /*.item{
+	width: 66%;
+	padding-top: 30%;
+}*/
+}
+@media (max-width : 250px){
+    .wrapper{
+        display:grid;
+        grid-gap:50px;
+        grid-template-columns: 100%;
+    }
+    .aa {
+        grid-column:1;
+        grid-row:1;
+        width:100%;
+    }
+    .b{
+        grid-column:1;
+        grid-row:2;
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+}
