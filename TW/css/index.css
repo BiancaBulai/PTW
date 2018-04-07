@@ -9,7 +9,7 @@ html, body, div, h1, a,img, ul, li,  form, label{
 }
 body {
     line-height: 1;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 ul{
     list-style:none;
@@ -54,9 +54,6 @@ header {
     grid-column: 1;
     grid-row: 1;
     background: #fff;
-    /*width: 100%;*/
-    /*height: 76px;*/
-    /*position: fixed;*/
     top: 0;
     left: 0;
     border-bottom: 1px solid #000000;
@@ -197,17 +194,6 @@ p {
         grid-gap:10px;
         grid-template-columns: 100%;
     }
-    .aa {
-        grid-column:1;
-        grid-row:1;
-
-        /*position: absolute;*/
-
-    }
-    .b{
-        grid-column:1;
-        grid-row:2;
-    }
     .item{
         width: 100%;
         text-align: center;
@@ -242,10 +228,6 @@ p {
     nav:hover ul {
         display: block;
     }
-    /*.item{
-	width: 66%;
-	padding-top: 30%;
-}*/
 }
 @media (max-width : 250px){
     .wrapper{
@@ -253,15 +235,7 @@ p {
         grid-gap:50px;
         grid-template-columns: 100%;
     }
-    .aa {
-        grid-column:1;
-        grid-row:1;
-        width:100%;
-    }
-    .b{
-        grid-column:1;
-        grid-row:2;
-    }
+
     .item{
         width: 100%;
         text-align: center;

@@ -143,24 +143,7 @@ h2{
     text-shadow: 2px 2px 1px rgba(0,0,0,0.1);
     font-size: 100%;
 }
-/*BUTON DE SUBMIT*/
 
-/*.buton-submit{*/
-    /*cursor: pointer;*/
-    /*margin-top:5%;*/
-    /*margin-left:40%;*/
-    /*margin-right: 40%;*/
-    /*border:1px solid black;*/
-    /*padding: 10px 30px;*/
-    /*color:black;*/
-    /*font-size:13px;*/
-    /*text-transformation:uppercase;*/
-/*}*/
-/*.buton-submit:hover{*/
-    /*background-color: black;*/
-    /*transition:all 0.5s ease-in;*/
-    /*color:white;*/
-/*}*/
 .d {
     grid-column: 3;
     grid-row: 2;
@@ -172,13 +155,13 @@ h2{
         font-size:15px;
     }
 }
+/*@media(max-width:px){*/
+    /*li a{*/
+        /*padding:5px 5px;*/
+        /*font-size:12px;*/
+    /*}*/
+/*}*/
 @media(max-width:1132px){
-    li a{
-        padding:5px 5px;
-        font-size:12px;
-    }
-}
-@media(max-width:1000px){
     .wrapper {
         display: grid;
         grid-gap: 10px;

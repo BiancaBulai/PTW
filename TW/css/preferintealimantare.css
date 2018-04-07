@@ -1,4 +1,4 @@
-*{
+/**{
     margin:0;
     padding:0;
 }
@@ -20,18 +20,19 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
     max-width: 100%;
-}
+    font-family: Courier New, monospace;
+}*/
 
 header {
     flex-basis: 20%;
     width: 100%;
-    padding: 20px;
+   /* padding: 20px;*/
 }
 
 .body {
     flex-basis: 80%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .recipe-list {
@@ -105,37 +106,32 @@ body{
     margin-top:0px;
 }
 h1{
-    color:white;
+    color: #000000;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
     margin-top: 275px;
 }
-.button{
-    margin-top:30px;
-    margin-left:440px;
+
+li.search-input {
+    float: right;
 }
-.btn{
-    border:1px solid white;
-    padding:10px 30px;
-    color:white;
-    text-decoration:none;
-    margin-right:5px;
-    font-size:13px;
-    text-transform: uppercase;
-}
-.btn-one{
-    font-family: "Roboto",sans-serif;
-}
-.btn-one:hover{
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
-}
-.btn-two{
-    font-family: "Roboto",sans-serif;
-}
-.btn-two:hover{
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
+#search input[type="text"] {
+    float: right;
+    background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial,Helvetica, Sans-serif;
+    color: #bebebe;
+    width: 150px;
+    padding: 8px 10px 8px 10px;
+    margin-top: 3px;
+    -webkit-border-radius: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+
 }
 
+#search input[type="text"]:focus {
+    width: 200px;
+}
