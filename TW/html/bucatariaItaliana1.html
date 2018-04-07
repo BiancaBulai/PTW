@@ -5,32 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food &amp; Recipes Web Template</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/preferintealimantare.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 <body>
-    <header>
-        <div class="row">
-            <div class="logo">
-                <img src="#">
-            </div>
-            <ul class="main-nav">
-                <li class="active"><a href="../html/index.html">Acasa</a></li>
-                <li><a href="../html/restrictiialimentare.html">Restrictii alimentare</a></li>
-                <li><a href="../html/stildeviata.html">Stil de viata</a></li>
-                <li><a href="../html/preferintealimentare.html">Preferinte alimentare</a></li>
-            </ul>
-        </div>
-    </header>
+<div class="wrapper">
 
+    <header>
+        <a href="../html/index.html" id="logo"></a>
+
+        <nav>
+
+            <a href="../html/index.html" id="menu-icon"></a>
+
+            <ul>
+                <li><a href="../html/index.html">Acasa</a></li>
+                <li><a href="../html/logout.html">GoOut</a></li>
+                <li><a href="../html/preferintealimentare.html">Preferinte Alimentare</a></li>
+                <li><a href="../html/restrictiialimentare.html">Restrictii Alimentare</a></li>
+                <li><a href="../html/stildeviata.html">Stil de viata</a></li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+</div>
+<div class="body">
+    <li class=search-input>
+        <form method="get" action="/search" id="search">
+            <input name="q" type="text" size="60" placeholder="Search..." />
+        </form>
+    </li>
 <div class="recipe">
-    <h2> Tortellini la tigaie </h2>
-    <img src="../img-retete/TORTELLINI-LA-TIGAIE-1024x754.jpg" alt="img" >
+    <h2 > Tortellini la tigaie </h2>
+    <img src="../img/TORTELLINI-LA-TIGAIE-1024x754.jpg" alt="img" >
     <h4>INGREDIENTE</h4>
-    <ul >
-        <li>600 g tortellini</li>
-        <li>900 ml sos marinara</li>
-        <li>150-200 g mozzarella rasă</li>
-    </ul>
+    <pre style="padding-left: -20px;">
+        600 g tortellini
+        900 ml sos marinara
+        150-200 g mozzarella rasă
+    </pre>
+
+
     <h4>MOD DE PREPARARE</h4>
     <p>
         O tigaie, 3 ingrediente și numai câteva minute libere: de atât ai nevoie ca să faci o masă super gustoasă în timp record pentru 4-5 persoane. Rețetă ideală pentru zilele caniculare în care nu vrei să te topești gătind ore în șir deasupra aragazului sau pentru zilele săptămânii în care ajungi târziu acasă de la serviciu.
@@ -41,5 +58,7 @@
         Pune busuioc deasupra, dacă vrei să ai o extra pată de culoare aromată.
     </p>
 </div>
+</div>
+
 </body>
 </html>
