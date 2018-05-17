@@ -15,20 +15,15 @@
     <header>
         <!--<h1> MENIU </h1>-->
         <a href="../html/index.html" id="logo"></a>
-
         <nav>
-
             <a href="../html/index.html" id="menu-icon"></a>
-
             <ul>
                 <li><a href="../html/index.html">Acasa</a></li>
                 <li><a href="../html/logout.html">GoOut</a></li>
                 <li><a href="../html/preferintealimentare.html">Preferinte Alimentare</a></li>
                 <li><a href="../html/restrictiialimentare.html">Restrictii Alimentare</a></li>
                 <li><a href="../html/stildeviata.html">Stil de viata</a></li>
-
             </ul>
-
         </nav>
     </header>
 
@@ -39,63 +34,26 @@
     <div class="box c">
         <div class="checkbox">
             <form action="/action_page.php" method="get">
-                <h2>Doriti retete pentru:</h2>
-                <input type="checkbox" name="mese" value="micdejun">Mic dejun<br>
-                <input type="checkbox" name="mese" value="pranz">Pranz<br>
-                <input type="checkbox" name="mese" value="cina">Cina<br>
-                <input type="checkbox" name="mese" value="desert">Desert<br>
-                <input type="checkbox" name="mese" value="gustari">Gustare<br>
-                <h2>Mod de prepare?</h2>
-                <input type="checkbox" name="preparare" value="cuptor">Cuptor<br>
-                <input type="checkbox" name="preparare" value="aragaz">Aragaz<br>
-                <input type="checkbox" name="preparare" value="gratar">Gratar<br>
-                <input type="checkbox" name="preparare" value="microunde">Microunde<br>
-                <h2>Cat timp aveti la dipozitie?</h2>
-                <input type="checkbox" name="timp" value="10">10 minute<br>
-                <input type="checkbox" name="timp" value="15">15 minute<br>
-                <input type="checkbox" name="timp" value="30">30 minute<br>
-                <input type="checkbox" name="timp" value="50">50 minute<br>
-                <input type="checkbox" name="timp" value="110">110 minute<br>
-                <h2>Alergie?</h2>
-                <input type="checkbox" name="alergii" value="scortisoara">Scortisoara<br>
-                <input type="checkbox" name="alergiei" value="ciocolata">Ciocolata<br>
-                <input type="checkbox" name="alergii" value="migdale">Migdale<br>
-                <input type="checkbox" name="alergii" value="alune">Alune<br>
-                <input type="checkbox" name="alergii" value="gluten">Gluten<br>
-                <input type="checkbox" name="alergii" value="lactoza">Lactoza<br>
-                <h2>Ce ingredient principal doriti?</h2>
-                <input type="checkbox" name="ingrediente" value="carne">Carne<br>
-                <input type="checkbox" name="ingrediente" value="branza">Branza<br>
-                <input type="checkbox" name="ingrediente" value="ou">Ou<br>
-                <input type="checkbox" name="ingrediente" value="dovleac">Dovleac<br>
-                <input type="checkbox" name="ingrediente" value="vinata">Vinata<br>
-                <input type="checkbox" name="ingrediente" value="cartof">Cartof<br>
-
-                <h2>Boli?</h2>
-                <input type="checkbox" name="boli" value="cardiac">Cardiac<br>
-                <input type="checkbox" name="boli" value="diabet">Diabet<br>
-                <input type="checkbox" name="boli" value="colesterol">Colesterol<br>
-                <h2>Stil de viata sau regim?</h2>
-                <input type="checkbox" name="regim" value="vegetarian">Vegetarian<br>
-                <input type="checkbox" name="regim" value="vegan">Vegan<br>
-                <input type="checkbox" name="regim" value="post">Post<br>
-                <input type="checkbox" name="regim" value="slabit">Slabit<br>
-                <h2>Va intereseaza o anumita bucatarie?</h2>
-                <input type="checkbox" name="bucatarii" value="romaneasca">Romaneasca<br>
-                <input type="checkbox" name="bucatarii" value="italiana">Italiana<br>
-                <input type="checkbox" name="bucatarii" value="frantuzeasca">Frantuzeasca<br>
-                <input type="checkbox" name="bucatarii" value="germana">Germana<br>
-                <input type="checkbox" name="bucatarii" value="chinezeasca">Chinezeasca<br>
-                <input type="checkbox" name="bucatarii" value="indiana">Indiana<br>
-                <input type="checkbox" name="bucatarii" value="irlandeza">Irlandeza<br>
-                <input type="checkbox" name="bucatarii" value="mexicana">Mexicana<br>
-                <input type="checkbox" name="bucatarii" value="greceasca">Greceasca<br>
-                <input type="checkbox" name="bucatarii" value="koreana">Koreana<br>
-                <input type="checkbox" name="bucatarii" value="egipteana">Egipteana<br>
-
-
-                <p class="buton-submit">
-                <input type="submit" value="Submit">
+                <h2>Doriti retete pentru: mic dejun, pranz, cina, desert sau gustare.</h2>
+                <input class="form-control" name="mese" placeholder="Scrie..." type="text">
+                <h2>Mod de prepare: cuptor, aragaz, gratar, microunde</h2>
+                <input class="form-control" name="preparare" placeholder="Scrie..." type="text">
+                <h2>Cat timp aveti la dipozitie: 10, 15, 30, 50, 110 minute, altceva</h2>
+                <input class="form-control" name="timp" placeholder="Scrie..." type="text">
+                <h2>Alergeni: scortisoara, ciocolata, migdale, alune, lapte/lactoza, cereale (care contin gluten),
+                    ou, peste, arahide, soia, telina, mustar, susan.</h2>
+                <input class="form-control" name="alergii" placeholder="Scrie..." type="text">
+                <h2>Ce ingredient principal doriti: carne, branza, ou, dovleac, vinata, cartof, altceva</h2>
+                <input class="form-control" name="ingrediente" placeholder="Scrie..." type="text">
+                <h2>Boli: cardiac, diabet, colesterol, altceva</h2>
+                <input class="form-control" name="boli" placeholder="Scrie..." type="text">
+                <h2>Stil de viata sau regim: vegetarian, vegan, post, slabit.</h2>
+                <input class="form-control" name="regim" placeholder="Scrie..." type="text">
+                <h2>Va intereseaza o anumita bucatarie: romaneasca, italiana, frantuzeasca, germana, chinezeasca,
+                indiana, irlandeza, mexicana, greceasca, koreana, egipteana, altceva</h2>
+                <input class="form-control" name="bucatarii" placeholder="Scrie..." type="text">
+                <p class="btn-submit">
+                Submit
                 </p>
             </form>
             <p>
