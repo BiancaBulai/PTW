@@ -149,6 +149,27 @@ h2{
     grid-row: 2;
     color: black;
 }
+.form-control{
+    display:block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 0.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-submit {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width:50px;
+}
 @media (max-width: 1341px){
     li a{
         padding:5px 5px;
