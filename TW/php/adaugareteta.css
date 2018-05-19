@@ -1,0 +1,85 @@
+body {
+    font-family: monospace;
+    background-color: white;
+    padding-left:10%;
+    padding-right: 10%;
+}
+.box{
+    margin-left:10%;
+    margin-right: 10%;
+
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100% ;
+}
+header{
+    grid-column:1/2;
+    grid-row:1;
+}
+.a{
+    grid-column:1;
+    grid-row: 2;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    background-color: white;
+}
+.card-body{
+    -webkit-box-flex:1;
+    flex:1 1 auto;
+    padding:1.25rem;
+}
+.form-group{
+    margin-bottom:1rem;
+    padding-bottom: 1rem;
+    width:60%;
+}
+
+
+input[type=text], input[type=password], input[type=date],input[type=email],input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}
+.error {
+    width: 92%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+.success {
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+}

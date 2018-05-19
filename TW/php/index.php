@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1, min-scale=1 ">
     <title>Food &amp; Recipes Web Template</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="navbarcss.css">
 </head>
 <body>
 <div class="wrapper">
@@ -21,10 +22,6 @@
             <ul>
                 <li><a href="../php/index.php" class="current">Acasa</a></li>
                 <li><a href="../php/login.php">Login</a></li>
-                <li><a href="../php/preferintealimentare.php">Preferinte Alimentare</a></li>
-                <li><a href="../php/restrictiialimentare.php">Restrictii Alimentare</a></li>
-                <li><a href="../php/stildeviata.php">Stil de viata</a></li>
-
             </ul>
 
         </nav>
