@@ -14,7 +14,7 @@ create table boli
 
 create table bucatarii
 (
-  numeb varchar(255) not null,
+  titlu varchar(255) not null,
   idb   int auto_increment
     primary key
 );
