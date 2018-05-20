@@ -21,23 +21,10 @@ create table bucatarii
 
 create table cantitate
 (
-  idcantitate  int auto_increment
+  idcantitate int auto_increment
     primary key,
-  gramaj       int          not null,
-  unitate      varchar(255) not null,
-  ingredientid int          not null
-);
-
-create index cantitate_ingrediente_idi_fk
-  on cantitate (ingredientid);
-
-create table format
-(
-  idformat int          not null
-    primary key,
-  rssf     varchar(255) not null,
-  csvf     varchar(255) not null,
-  jsonf    varchar(255) not null
+  gramaj      int          not null,
+  unitate     varchar(255) not null
 );
 
 create table imagini
@@ -58,12 +45,6 @@ create table ingrediente
     on update cascade
     on delete cascade
 );
-
-alter table cantitate
-  add constraint cantitate_ingrediente_idi_fk
-foreign key (ingredientid) references ingrediente (idingredient)
-  on update cascade
-  on delete cascade;
 
 create index ingrediente_cantitate_idc_fk
   on ingrediente (cantitateid);
@@ -116,7 +97,6 @@ create table retete
   idreteta     int auto_increment
     primary key,
   titlu        varchar(255) not null,
-  formatid     int          not null,
   pasid        int          not null,
   masaid       int          not null,
   timpid       int          not null,
@@ -127,10 +107,6 @@ create table retete
   imaginiid    int          not null,
   constraint utilizatori_retete_titlu_uindex
   unique (titlu),
-  constraint retete_format_idf_fk
-  foreign key (formatid) references format (idformat)
-    on update cascade
-    on delete cascade,
   constraint retete_pasi_idp_fk
   foreign key (pasid) references pasi (idpas)
     on update cascade
@@ -161,11 +137,25 @@ create table retete
   foreign key (imaginiid) references imagini (idimg)
 );
 
+create table format
+(
+  idformat int          not null
+    primary key,
+  rssf     varchar(255) not null,
+  csvf     varchar(255) not null,
+  jsonf    varchar(255) not null,
+  retetaid int          not null,
+  constraint format_retete_idreteta_fk
+  foreign key (retetaid) references retete (idreteta)
+    on update cascade
+    on delete cascade
+);
+
+create index format_retete_idreteta_fk
+  on format (retetaid);
+
 create index retete_bucatarii_idbucatarie_fk
   on retete (bucatarieid);
-
-create index retete_format_idf_fk
-  on retete (formatid);
 
 create index retete_imagini_idimg_fk
   on retete (imaginiid);
