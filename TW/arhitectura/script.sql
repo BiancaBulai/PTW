@@ -7,7 +7,7 @@ create table alergii
 
 create table boli
 (
-  idb   int auto_increment
+  idb   varchar(255) auto_increment
     primary key,
   numeb int not null
 );
